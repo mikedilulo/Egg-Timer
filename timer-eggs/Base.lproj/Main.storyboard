@@ -58,21 +58,16 @@
                                     <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpS-oi-IEd"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Hoa-xz-56x">
-                                <rect key="frame" x="20" y="730.5" width="374" height="2.5"/>
-                                <color key="progressTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="trackTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G1P-w1-Uq9">
+                                <rect key="frame" x="46" y="737" width="339" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Hoa-xz-56x" secondAttribute="trailing" id="VR7-nj-HJO"/>
-                            <constraint firstItem="Hoa-xz-56x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lHi-VU-sIP"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="progressBar" destination="Hoa-xz-56x" id="gS9-kN-VHQ"/>
+                        <outlet property="progressBar" destination="G1P-w1-Uq9" id="PHm-WB-ji4"/>
                         <outlet property="titleLabel" destination="KQ6-iv-8hM" id="N1b-oo-MkL"/>
                     </connections>
                 </viewController>

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     
-    let eggTimes : [String: Int] = ["Soft Eggs": 3, "Medium Eggs": 4, "Hard Eggs": 7]
+    let eggTimes : [String: Int] = ["Soft Eggs": 320, "Medium Eggs": 420, "Hard Eggs": 720]
     
     var timer = Timer()
     var totalTime = 0

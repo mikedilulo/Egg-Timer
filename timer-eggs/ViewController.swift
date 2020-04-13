@@ -9,28 +9,46 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var progressBar: UIProgressView!
     
-    let softTime = 5
-    let mediumTime = 7
-    let hardTime = 12
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    let eggTimes : [String: Int] = ["Soft Eggs": 300, "Medium Eggs": 420, "Hard Eggs": 720]
+    
+    var secondsRemaining = 60
+    
+    var timer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+
 
     @IBAction func hardnessSelected(_ sender: UIButton) {
-        let hardness = sender.currentTitle
-        switch hardness {
-        case "Soft Eggs":
-            print(softTime)
-        case "Medium Eggs":
-            print(mediumTime)
-        case "Hard Eggs":
-            print(hardTime)
-        default:
-            print("Error")
+        
+        
+        
+        timer.invalidate()
+        
+        let hardness = sender.currentTitle!
+        
+        secondsRemaining = eggTimes[hardness]!
+    
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+     }
+    
+    @objc func updateTimer() {
+        if secondsRemaining > 0 {
+            print("\(secondsRemaining) seconds.")
+            secondsRemaining -= 1
+        } else {
+            timer.invalidate()
+            titleLabel.text = "Done!"
         }
-}
+    }
+        }
 
-}
+

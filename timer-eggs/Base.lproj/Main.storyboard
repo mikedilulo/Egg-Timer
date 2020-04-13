@@ -23,6 +23,9 @@
                                 <state key="normal" title="Soft Eggs">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0y-jq-eu8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRJ-TJ-OQf">
                                 <rect key="frame" x="156" y="432" width="118" height="69"/>
@@ -32,6 +35,9 @@
                                 <state key="normal" title="Medium Eggs">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZh-2H-utB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhP-fZ-oiU">
                                 <rect key="frame" x="291" y="432" width="94" height="69"/>
@@ -41,6 +47,9 @@
                                 <state key="normal" title="Hard Eggs">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpS-oi-IEd"/>
+                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mdz-Zt-kZB">
                                 <rect key="frame" x="46" y="671" width="150" height="3"/>
